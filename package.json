@@ -1,0 +1,10 @@
+{
+  "name": "affiliate-marketing-lab",
+  "version": "1.0.0",
+  "description": "3-6 제휴 마케팅 운영 실습 도우미 (롯데 LIFT 유통·리테일 과정)",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "license": "UNLICENSED",
+  "private": true
+}

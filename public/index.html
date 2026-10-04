@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>제휴 마케팅 실습 도우미</title>
+<meta name="description" content="3-6. 제휴 마케팅 운영 실습 ①~⑦을 스스로 생각하고 계산하며 완성하는 웹앱">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="top">
+  <div class="brand">
+    <strong>3-6. 제휴 마케팅 운영</strong>
+    <span>실습 도우미 · 교육용으로 구성한 가상 자료입니다</span>
+  </div>
+  <div class="meta">
+    <label>조 이름 <input id="team" autocomplete="off"></label>
+    <label>작성자 <input id="writer" autocomplete="off"></label>
+  </div>
+  <div class="tools">
+    <button id="btnConsult" class="btn accent">자문 구하기</button>
+    <button id="btnSave" class="btn">이어하기 저장(JSON)</button>
+    <button id="btnLoad" class="btn">불러오기</button>
+    <input id="fileLoad" type="file" accept="application/json,.json" hidden>
+    <button id="btnCsv" class="btn">CSV</button>
+    <button id="btnPrint" class="btn">인쇄(PDF)</button>
+    <label class="chk"><input id="unlockAll" type="checkbox"> 순서 잠금 풀기</label>
+  </div>
+</header>
+
+<div class="layout">
+  <nav id="nav" class="nav" aria-label="실습 단계"></nav>
+  <main id="main" class="main" tabindex="-1"></main>
+  <aside id="side" class="side" aria-label="조언과 예산 계산기"></aside>
+</div>
+
+<footer class="foot">
+  <button id="btnPrev" class="btn">← 이전 실습</button>
+  <span id="footMsg" role="status"></span>
+  <button id="btnNext" class="btn accent">다음 실습 →</button>
+</footer>
+
+<div id="overlay" class="overlay" hidden>
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle"></div>
+</div>
+<div id="overlay2" class="overlay" style="z-index:60" hidden>
+  <div id="modal2" class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle2"></div>
+</div>
+<div id="printArea" class="print-area" aria-hidden="true"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
