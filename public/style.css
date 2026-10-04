@@ -117,3 +117,17 @@ details.lec summary{cursor:pointer;font-weight:700}
   table.ws td[data-l]::before{content:none}
   .wrapbox{display:block}.wrapbox textarea{display:none}
 }
+
+.modal.wide{max-width:1100px}
+.exbox{border:1px solid var(--coral);margin:14px 0;padding:8px 12px;background:#fffaf8}
+.exbox summary{cursor:pointer;font-weight:700}
+.exset{margin:10px 0}.exset .pv{background:#fff;border:1px solid var(--line);padding:8px}
+dl.pr{margin:6px 0}dl.pr dt{font-weight:700;margin-top:10px;color:var(--coral-d)}dl.pr dd{margin:2px 0 0 0}
+details.prin>summary{font-size:17px}
+.chkrow{display:flex;gap:8px;align-items:flex-start;margin:6px 0}
+.inl-ta{width:100%;min-height:96px;border:1px solid var(--line);padding:6px;border-radius:4px}
+.cmp{border-top:2px solid var(--coral);margin-top:16px;padding-top:6px}.cmp h2 small{font-size:14px;color:var(--sub);font-weight:400}
+.kv dt small{display:block;font-size:12px;color:var(--sub);font-weight:400}
+#exTools{display:inline-flex;gap:6px}
+.lead{max-width:80ch}
+@media print{.print-area .cmp{display:none}}
